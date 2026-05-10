@@ -14,7 +14,7 @@ O foco principal é a implementação manual de estruturas de dados fundamentais
 
 ## 🛠️ Tecnologias e Conceitos
 *   **Linguagem:** Python 3.
-*   **Bibliotecas:** 
+*   **Bibliotecas:** Nenhuma biblioteca externa é necessária para a execução.
 *   **Paradigma:** Orientação a Objetos (Classes, Atributos e Métodos).
 *   **Estruturas de Dados Manuais:**
     *   **Lista Encadeada Simples:** Para armazenamento da biblioteca.
