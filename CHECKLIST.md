@@ -5,8 +5,8 @@ Este checklist detalha as etapas de construção do backend para o aplicativo de
 ## 🟢 1. Configuração e Infraestrutura
 - [x] Inicializar repositório Git e configurar `.gitignore`.
 - [x] Criar ambiente virtual Python (`python -m venv .venv`).
-- [ ] Ativar o ambiente virtual e criar o arquivo `requirements.txt`.
-- [ ] **Estrutura de Pastas:** Criar diretório `classes/` para os módulos e `main.py` para o ponto de entrada.
+- [x] Ativar o ambiente virtual e criar o arquivo `requirements.txt`.
+- [x] **Estrutura de Pastas:** Criar diretório `classes/` para os módulos e `main.py` para o ponto de entrada.
 
 ## 🔵 2. Modelagem de Dados (POO & Nodos)
 - [ ] **Classe `Musica`:** Implementar atributos `id`, `titulo`, `artista`, `genero` e `bpm`.
