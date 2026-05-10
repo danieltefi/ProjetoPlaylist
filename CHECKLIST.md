@@ -9,8 +9,8 @@ Este checklist detalha as etapas de construção do backend para o aplicativo de
 - [x] **Estrutura de Pastas:** Criar diretório `classes/` para os módulos e `main.py` para o ponto de entrada.
 
 ## 🔵 2. Modelagem de Dados (POO & Nodos)
-- [ ] **Classe `Musica`:** Implementar atributos `id`, `titulo`, `artista`, `genero` e `bpm`.
-- [ ] **ID Sequencial:** Implementar lógica para gerar IDs automáticos que não se repetem, mesmo após remoções.
+- [x] **Classe `Musica`:** Implementar atributos `id`, `titulo`, `artista`, `genero` e `bpm`.
+- [x] **ID Sequencial:** Implementar lógica para gerar IDs automáticos que não se repetem, mesmo após remoções.
 - [ ] **Classe `NodoLista`:** Criar o nó para a lista encadeada (armazenar objeto `Musica` e referência `proximo`).
 - [ ] **Classe `NodoFila`:** Criar o nó encadeado usado internamente pela fila.
 
