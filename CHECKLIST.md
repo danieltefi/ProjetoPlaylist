@@ -15,11 +15,11 @@ Este checklist detalha as etapas de construção do backend para o aplicativo de
 - [x] **Classe `NodoFila`:** Criar o nó encadeado usado internamente pela fila.
 
 ## 🟡 3. Implementação das Estruturas Manuais
-- [ ] **Classe `Biblioteca` (Lista Encadeada Simples):**
-    - [ ] Implementar inserção ao final da lista.
-    - [ ] Implementar remoção por ID com ajuste de ponteiros.
-    - [ ] Implementar busca por ID ou Título.
-    - [ ] Implementar percurso para listagem completa.
+- [x] **Classe `Biblioteca` (Lista Encadeada Simples):**
+    - [x] Implementar inserção ao final da lista.
+    - [x] Implementar remoção por ID com ajuste de ponteiros.
+    - [x] Implementar busca por ID ou Título.
+    - [x] Implementar percurso para listagem completa.
 - [ ] **Classe `Fila` (FIFO):**
     - [ ] Implementar método `enqueue` (enfileirar).
     - [ ] Implementar método `dequeue` (desenfileirar).
