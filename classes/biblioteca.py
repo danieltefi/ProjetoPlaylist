@@ -31,7 +31,7 @@ class Biblioteca: # gerencia a biblioteca de músicas usando lista encadeada sim
         atual = self.inicio
         while atual is not None: # percorre do início ao fim
             print(atual.musica.exibir_dados()) # chama o método criado no musica.py
-            print("-" * 30)
+            print('-' * 30)
             atual = atual.proximo # move para o próximo nó
 
     def remover_musica(self, id: int) -> bool: # busca pelo id e remove o nó correspondente
