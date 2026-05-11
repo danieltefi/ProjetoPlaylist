@@ -20,10 +20,10 @@ Este checklist detalha as etapas de construção do backend para o aplicativo de
     - [x] Implementar remoção por ID com ajuste de ponteiros.
     - [x] Implementar busca por ID ou Título.
     - [x] Implementar percurso para listagem completa.
-- [ ] **Classe `Fila` (FIFO):**
-    - [ ] Implementar método `enqueue` (enfileirar).
-    - [ ] Implementar método `dequeue` (desenfileirar).
-    - [ ] Implementar percurso para exibir a fila sem remover elementos.
+- [x] **Classe `Fila` (FIFO):**
+    - [x] Implementar método `enqueue` (enfileirar).
+    - [x] Implementar método `dequeue` (desenfileirar).
+    - [x] Implementar percurso para exibir a fila sem remover elementos.
 
 ## 🟠 4. Lógica de Negócio e Playlists
 - [ ] **Classificação por Humor:** Criar lógica baseada nas faixas de BPM (Relaxar, Focar, Animar, Treinar).
