@@ -32,7 +32,7 @@ def main():
         print('='*30)
 
         opcao = input('Digite o número da opção que deseja realizar: ')
-        opcoes_validas = ('0', '1', '2', '3', '4', '5', '6', '7', '8', '9')
+        opcoes_validas = ('0', '1', '2', '3', '4', '5', '6', '7', '8', '9') # tupla para tratar as opções que o usuário pode colocar
 
         if opcao not in opcoes_validas:
             print('\nOpção inválida. Tente novamente.')
@@ -55,19 +55,19 @@ def main():
             biblioteca.listar_biblioteca() # apresenta a bilbioteca completa para usuário saber o id
             try:
                 id_remover = int(input('\nID da música para remover: '))
-                sucesso = biblioteca.remover_musica(id_remover)
+                sucesso = biblioteca.remover_musica(id_remover) # remove a música
                 if sucesso:
                     print(f' Música {id_remover} removida!')
                 else:
                     print(' ID não encontrado.')
             except ValueError:
-                print(' Por favor, digite um ID numérico válido.')
+                print(' Por favor, digite um ID numérico válido.') #erro se digitar algo diferente de número
 
         elif opcao == '3':
             print('\n--- BUSCAR MÚSICA ---')
             biblioteca.listar_biblioteca() # apresenta a bilbioteca completa para usuário saber o id e título
             termo = input('Digite o ID ou Título da música: ')
-            musica_encontrada = biblioteca.buscar_musica(termo)
+            musica_encontrada = biblioteca.buscar_musica(termo) # Retorna o objeto Música se encontrar o id ou título, caso contrário retorna none
 
             if musica_encontrada:
                 print('\nMÚSICA ENCONTRADA:')
@@ -78,7 +78,7 @@ def main():
 
         elif opcao == '4':
             print('\n--- BIBLIOTECA COMPLETA ---')
-            biblioteca.listar_biblioteca() # apresenta a bilbioteca completa para usuário
+            biblioteca.listar_biblioteca() # apresenta a bilbioteca completa ao usuário
 
         elif opcao == '5':
             print('\n--- MONTAR PLAYLIST DE HUMOR ---')
@@ -89,10 +89,10 @@ def main():
 
             atual = biblioteca.inicio
             if atual is None:
-                print('Biblioteca vazia.')
+                print('Biblioteca vazia.') # se a biblioteca estiver vazia
             else:
-                while atual is not None:
-                    musica = atual.musica
+                while atual is not None: # enquanto a atual não for none (ao chegar no none para, pois chegou ao ultimo elemento)
+                    musica = atual.musica # analisa a música atual
                     if musica.bpm <= 80:
                         relaxar.enfileirar(musica)
                     elif musica.bpm >= 81 and musica.bpm <= 120:
@@ -101,7 +101,7 @@ def main():
                         animar.enfileirar(musica)
                     else:
                         treinar.enfileirar(musica)
-                    atual = atual.proximo
+                    atual = atual.proximo # passa o atual para a proxima música
                 print('Filas organizadas com sucesso!')
 
         elif opcao == '6':
@@ -125,9 +125,9 @@ def main():
                     print(f'\n Tocando agora: {musica_tocando.titulo} - {musica_tocando.artista}')
                     historico.enfileirar(musica_tocando) # enfileira no histórico
                 else:
-                    print('Fila de humor vazia.')
+                    print('Fila de humor vazia.') # fila sem músicas
             else:
-                print('Opção de humor inválida.')
+                print('Opção de humor inválida.') # erro da escolha da opcao 6 (n é número)
 
         elif opcao == '7':
             print('\n--- EXIBIR FILA DE HUMOR ---')
@@ -150,17 +150,17 @@ def main():
 
         elif opcao == '9':
             print('\n--- ESTATÍSTICAS ---')
-            total_bib = 0
+            total_bib = 0 # contagem manual da biblioteca
             atual = biblioteca.inicio
-            while atual:
-                total_bib += 1
-                atual = atual.proximo
-            print(f'Total na Biblioteca: {total_bib}')
-            print(f'Fila Relaxar: {relaxar.tamanho}')
+            while atual: # percorre cada nodo da lista
+                total_bib += 1 # adc + 1 a cada nodo
+                atual = atual.proximo # move para o próximo
+            print(f'Total na Biblioteca: {total_bib}') # numero total na biblioteca
+            print(f'Fila Relaxar: {relaxar.tamanho}') # quantas possui em cada fila de humor
             print(f'Fila Focar: {focar.tamanho}')
             print(f'Fila Animar: {animar.tamanho}')
             print(f'Fila Treinar: {treinar.tamanho}')
-            print(f'Total reproduzidas: {historico.tamanho}')
+            print(f'Total reproduzidas: {historico.tamanho}') # exibe o histórico
 
         elif opcao == '0':
             print('\nSistema Encerrado!')
@@ -170,4 +170,4 @@ def main():
         limpar_tela() # qualquer opção (inválida ou válida) vai cair aqui e limpar o terminal antes de reiniciar o menu
 
 if __name__ == '__main__':
-    main()
+    main() # o programa só inicia se este arquivo for executado diretamente
