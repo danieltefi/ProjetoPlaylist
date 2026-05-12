@@ -26,22 +26,22 @@ Este checklist detalha as etapas de construção do backend para o aplicativo de
     - [x] Implementar percurso para exibir a fila sem remover elementos.
 
 ## 🟠 4. Lógica de Negócio e Playlists
-- [ ] **Classificação por Humor:** Criar lógica baseada nas faixas de BPM (Relaxar, Focar, Animar, Treinar).
-- [ ] **Sincronização:** Implementar a limpeza das filas de humor antes de remontá-las a partir da biblioteca atual.
-- [ ] **Sistema de Reprodução:** Lógica para retirar da fila de humor (`dequeue`) e inserir automaticamente na instância de **Histórico**.
-- [ ] **Estatísticas:** Implementar contadores para o total da biblioteca, tamanho de cada fila e total reproduzido.
+- [x] **Classificação por Humor:** Criar lógica baseada nas faixas de BPM (Relaxar, Focar, Animar, Treinar).
+- [x] **Sincronização:** Implementar a limpeza das filas de humor antes de remontá-las a partir da biblioteca atual.
+- [x] **Sistema de Reprodução:** Lógica para retirar da fila de humor (`dequeue`) e inserir automaticamente na instância de **Histórico**.
+- [x] **Estatísticas:** Implementar contadores para o total da biblioteca, tamanho de cada fila e total reproduzido.
 
 ## ⚪ 5. Interface e Robustez
-- [ ] **Menu Principal:** Criar interface interativa com as 10 operações solicitadas.
-- [ ] **Tratamento de Exceções:**
-    - [ ] Validar se BPM é numérico e > 0.
-    - [ ] Tratar busca por ID inexistente.
-    - [ ] Validar tentativa de reprodução em fila vazia.
+- [x] **Menu Principal:** Criar interface interativa com as 10 operações solicitadas.
+- [x] **Tratamento de Exceções:**
+    - [x] Validar se BPM é numérico e > 0.
+    - [x] Tratar busca por ID inexistente.
+    - [x] Validar tentativa de reprodução em fila vazia.
 
 ## 🔴 6. Finalização e Entrega
-- [ ] **Restrição Técnica:** Garantir que **nenhuma** estrutura pronta (`list`, `deque`, etc.) seja usada nas coleções principais.
-- [ ] **Histórico:** Garantir que a fila de histórico seja uma instância separada da classe `Fila`.
-- [ ] **GitHub:** Realizar entregas incrementais (commits regulares) para cumprir o critério de avaliação.
+- [x] **Restrição Técnica:** Garantir que **nenhuma** estrutura pronta (`list`, `deque`, etc.) seja usada nas coleções principais.
+- [x] **Histórico:** Garantir que a fila de histórico seja uma instância separada da classe `Fila`.
+- [x] **GitHub:** Realizar entregas incrementais (commits regulares) para cumprir o critério de avaliação.
 - [ ] **Documentação:** Atualizar o `README.md` com as instruções de execução e status.
 
 ---
