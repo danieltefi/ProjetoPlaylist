@@ -21,24 +21,15 @@ O foco principal é a implementação manual de estruturas de dados fundamentais
     *   **Fila FIFO (Linked Queue):** Para filas de reprodução e histórico.
 *   **Estruturas Proibidas:** Não foram utilizadas estruturas *built-in* como `list` ou `deque` para as coleções principais.
 
-## ⚙️ Configuração do Ambiente
-O projeto utiliza um **ambiente virtual (venv)** para isolamento de dependências.
+## ⚙️ Execução
 
-### Instalação e Ativação
-1.  **Criar o Ambiente Virtual:**
-    ```
-    python -m venv .venv
-    ```
-2.  **Ativar o ambiente:**
-    *   **Windows (PowerShell):** `.\.venv\Scripts\Activate.ps1`
-    *   **Windows (CMD):** `.\.venv\Scripts\activate.bat`
-    *   **Linux/macOS:** `source .venv/bin/activate`
-3.  **Instalar Dependências:**
-    ```
-    pip install -r requirements.txt
-    ```
-**Execução:**
-    * Com o venv ativo: main.py
+1. Tenha o Python 3 instalado.
+2. Faça o clone do projeto.
+    ```bash
+   git clone <URL do repositório>
+3. Execute o comando:
+   ```bash
+   python main.py
 
 ## 📂 Estrutura de Arquivos
 ```text
