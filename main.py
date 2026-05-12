@@ -78,7 +78,6 @@ def main():
                 print('\n Música não encontrada na biblioteca.')
 
         elif opcao == '4':
-            print('\n--- BIBLIOTECA COMPLETA ---')
             biblioteca.listar_biblioteca() # apresenta a bilbioteca completa ao usuário
 
         elif opcao == '5':
