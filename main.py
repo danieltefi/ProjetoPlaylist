@@ -17,14 +17,14 @@ def main():
 
     while True:
         print('\n' + '='*30)
-        print('      SISTEMA PLAYLIST')
+        print('SISTEMA PLAYLIST')
         print('='*30)
         print('1. Adicionar música à biblioteca')
         print('2. Remover música da biblioteca')
         print('3. Buscar música')
         print('4. Listar biblioteca completa')
         print('5. Montar fila de reprodução por humor')
-        print('6. Reproduzir próxima')
+        print('6. Reproduzir música')
         print('7. Exibir fila de humor')
         print('8. Exibir histórico de reproduções')
         print('9. Estatísticas')
@@ -105,7 +105,7 @@ def main():
                 print('Filas organizadas com sucesso!')
 
         elif opcao == '6':
-            print('\n--- REPRODUZIR PRÓXIMA ---')
+            print('\n--- REPRODUZIR MÚSICA ---')
             print('Escolha o humor: 1.Relaxar, 2.Focar, 3.Animar, 4.Treinar')
             vibe = input('Opção: ')
             
