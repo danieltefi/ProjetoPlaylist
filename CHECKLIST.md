@@ -41,7 +41,7 @@ Este checklist detalha as etapas de construção do backend para o aplicativo de
 - [x] **Restrição Técnica:** Garantir que **nenhuma** estrutura pronta (`list`, `deque`, etc.) seja usada nas coleções principais.
 - [x] **Histórico:** Garantir que a fila de histórico seja uma instância separada da classe `Fila`.
 - [x] **GitHub:** Realizar entregas incrementais (commits regulares) para cumprir o critério de avaliação.
-- [ ] **Documentação:** Atualizar o `README.md` com as instruções de execução e status.
+- [x] **Documentação:** Atualizar o `README.md` com as instruções de execução e status.
 
 ---
-*Status Atual: 🚧 Em desenvolvimento*
+*Status Atual: 🚧 Finalizado*

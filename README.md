@@ -47,4 +47,4 @@ O foco principal é a implementação manual de estruturas de dados fundamentais
 *   **Gestão de Memória:** Implementação total baseada em nós encadeados e referências de ponteiros, sem o uso de estruturas prontas do Python.
 
 ## 🚧 Status do Projeto
-**Em desenvolvimento**
+**Finalizado**
