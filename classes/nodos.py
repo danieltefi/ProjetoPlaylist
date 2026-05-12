@@ -1,4 +1,4 @@
-from musica import Musica # importa a classe Musica
+from classes.musica import Musica # importa a classe Musica
 from typing import Optional
 
 class NodoLista: # nó para lista encadeada simples da biblioteca.

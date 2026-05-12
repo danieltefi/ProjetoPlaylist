@@ -1,6 +1,6 @@
 from typing import Optional
-from musica import Musica
-from nodos import NodoLista
+from classes.musica import Musica
+from classes.nodos import NodoLista
 
 class Biblioteca: # gerencia a biblioteca de músicas usando lista encadeada simples
 

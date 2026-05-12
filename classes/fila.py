@@ -1,6 +1,6 @@
 from typing import Optional
-from musica import Musica
-from nodos import NodoFila
+from classes.musica import Musica
+from classes.nodos import NodoFila
 
 class Fila: # implementa uma Fila encadeada para playlists e histórico
     
