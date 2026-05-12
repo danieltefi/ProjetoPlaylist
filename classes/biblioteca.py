@@ -7,6 +7,18 @@ class Biblioteca: # gerencia a biblioteca de músicas usando lista encadeada sim
     def __init__(self): # biblioteca começa vazia, então o início aponta para none
         self.inicio: Optional[NodoLista] = None
 
+    def popular_biblioteca(self): # adiciona músicas predefinidas para facilitar os testes do sistema
+        
+        dados_iniciais = [
+            ("Lofi Study", "Lofi Girl", "Lofi", 70),       # Relaxar
+            ("Fix You", "Coldplay", "Pop", 121),           # Animar
+            ("Master of Puppets", "Metallica", "Metal", 212), # Treinar
+            ("Stay", "The Kid LAROI", "Pop", 85)           # Focar
+        ]
+        
+        for titulo, artista, genero, bpm in dados_iniciais:
+            self.adicionar_musica(Musica(titulo, artista, genero, bpm)) # adiciona as musicas testes na biblioteca
+
     def adicionar_musica(self, musica: Musica) -> None: # insere uma música no final da lista
                                                         # -> None: usado para indicar que a função não retorna nenhum valor
 

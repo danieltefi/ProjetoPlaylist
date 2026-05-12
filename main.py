@@ -8,6 +8,7 @@ def limpar_tela():
 
 def main():
     biblioteca = Biblioteca() # instancia as estruturas criadas
+    biblioteca.popular_biblioteca() # carrega as músicas testes automaticamente
     historico = Fila(limite=10) # fila com limite de 10
 
     relaxar = Fila()  # filas de humor, BPM <= 80
