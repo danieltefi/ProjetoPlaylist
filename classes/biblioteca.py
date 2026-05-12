@@ -8,12 +8,29 @@ class Biblioteca: # gerencia a biblioteca de músicas usando lista encadeada sim
         self.inicio: Optional[NodoLista] = None
 
     def popular_biblioteca(self): # adiciona músicas predefinidas para facilitar os testes do sistema
+
         
         dados_iniciais = [
-            ("Lofi Study", "Lofi Girl", "Lofi", 70),       # Relaxar
-            ("Fix You", "Coldplay", "Pop", 121),           # Animar
-            ("Master of Puppets", "Metallica", "Metal", 212), # Treinar
-            ("Stay", "The Kid LAROI", "Pop", 85)           # Focar
+            ('The Business', 'Tiesto', 'EDM', 70), # relaxar
+            ('Viva La Vida', 'Coldplay', 'Pop', 121), # animar
+            ('Hollow', 'Morten, ARTBAT', 'Techno', 212), # treinar
+            ('Paradise', 'Coldplay', 'Pop', 81), # focar
+            ('Heaven Takes You Home', 'Swedish House Mafia', 'EDM', 80), # relaxar
+            ('A Sky Full of Stars', 'Coldplay', 'Pop', 125), # animar
+            ('Save The World', 'Swedish House Mafia', 'EDM', 128), # animar
+            ('Reload', 'Swedish House Mafia', 'EDM', 250), # treinar
+            ('Heroes', 'Alesso', 'EDM', 230), # treinar
+            ('Calling', 'Sebastian Ingrosso, Alesso', 'EDM', 240), # treinar
+            ('Titanium', 'David Guetta', 'Dance', 120), # focar
+            ('Shape of You', 'Ed Sheeran', 'Pop', 96), # focar
+            ('Someone Like You', 'Adele', 'Pop', 67), # relaxar
+            ('Without You', 'David Guetta, Usher', 'Dance', 110), # focar
+            ('Memories', 'David Guetta, Kid Cudi', 'Dance', 128), # animar
+            ('Innerbloom', 'RÜFÜS DU SOL', 'Progressive House', 120), # focar
+            ('Dont You Worry Child', 'Swedish House Mafia', 'EDM', 129), # animar
+            ('Satisfaction', 'Benny Benassi', 'House', 130), # animar
+            ('Love Parade', 'Da Hool', 'Techno', 165), # treinar
+            ('Hear Me Now', 'ALOK, Bruno Martini', 'House', 79) # relaxar
         ]
         
         for titulo, artista, genero, bpm in dados_iniciais:
