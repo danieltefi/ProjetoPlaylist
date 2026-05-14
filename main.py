@@ -48,8 +48,8 @@ def main():
                 nova_musica = Musica(titulo, artista, genero, bpm) # adiciona música se usuário digitou número
                 biblioteca.adicionar_musica(nova_musica)
                 print(f'\n Música {titulo} adicionada à Biblioteca')
-            except ValueError as e: # só roda se usuário digitar algo que não seja número
-                print(f'\n Erro: {e}')
+            except ValueError: # só roda se usuário digitar algo que não seja número
+                print(f'\n Por favor, digite um número inteiro válido para o BPM.')
 
         elif opcao == '2':
             print('\n--- REMOVER MÚSICA ---')
